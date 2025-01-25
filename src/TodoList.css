@@ -1,0 +1,27 @@
+.todo-lists-container {
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+    flex-wrap: wrap; 
+    margin: 20px auto;
+  }
+  
+  .todo-list-container {
+    text-align: center;
+    width: 300px;
+  }
+  
+  .todo-list-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .todo-list li {
+    width: 100%;
+    padding: 10px;
+  }
+  

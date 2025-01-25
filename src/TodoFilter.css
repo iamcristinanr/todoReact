@@ -1,0 +1,25 @@
+.todo-filter {
+    width: 80%;
+    max-width: 400px;
+    font-size: 1rem;
+    color: #333;
+    padding: 12px;
+    margin: 0 auto 20px;  
+    display: block;      
+    border: 2px solid #9d7fb9;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .todo-filter::placeholder {
+    color: #9d7fb9;
+    font-style: italic;
+  }
+  
+  .todo-filter:focus {
+    border-color: #7a5a9c;
+    box-shadow: 0 0 10px rgba(157, 127, 185, 0.8);
+  }
