@@ -1,3 +1,4 @@
+
 .todo-item {
     display: flex;
     align-items: center;
@@ -12,36 +13,55 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
   }
-  
-  .todo-item p {
-    font-size: 1rem;
-    color: #333;
-    margin: 0;
-    flex-grow: 1;
-    text-align: center;
-  }
-  
-  .todo-item .check {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #4caf50; 
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-  
-  .todo-item .check:hover {
-    transform: scale(1.2);
-    color: #388e3c; 
-  }
 
-  .todo-item .delete {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #e57373;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-  
-  .todo-item .delete:hover {
-    transform: scale(1.2);
-    color: #d32f2f;
-  }
+.todo-item p {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 15px;
+}
+
+/* Estilos de los botones como al principio */
+.start {
+  color: #93bfe3;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.start:hover {
+  color: #1565c0;
+}
+
+.complete {
+  color: #95b496;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.complete:hover {
+  color: #2e7d32;
+}
+
+.delete {
+  color: #c64784;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.delete:hover {
+  color: #d32121;
+}
+
+/* Estilo para la categoría "Done" */
+.done-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4caf50;
+}

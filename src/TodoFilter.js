@@ -1,10 +1,12 @@
 import './TodoFilter.css';
 
-function TodoFilter() {
+function TodoFilter({searchValue, setSearchValue}) {
   return (
     <input 
       className="todo-filter"
-      placeholder="Cut Onion"
+      placeholder="What have we to do?"
+      value = {searchValue}
+      onChange={(event) => setSearchValue(event.target.value)}
     />
   );
 }

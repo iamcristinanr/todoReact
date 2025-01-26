@@ -1,8 +1,8 @@
 import './TodoButton.css';
 
-function TodoButton() {
+function TodoButton({onClick}) {
   return (
-    <button className="todo-button">
+    <button className="todo-button" onClick={onClick}>
       Add Todo
     </button>
   );
